@@ -59,5 +59,5 @@ var Role;
     Role["Editor"] = "editor";
     Role["Viewer"] = "viewer";
 })(Role || (Role = {}));
-let myRole = Role.Editor;
+let myRole = Role.Admin;
 //# sourceMappingURL=main.js.map

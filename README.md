@@ -20,3 +20,11 @@ setting root dir and outdir  in general src is in root dir for write code and pu
 * union
 * array
 * tuple
+* object
+* enum
+
+
+
+# function return type 
+* return type
+* function parameter type

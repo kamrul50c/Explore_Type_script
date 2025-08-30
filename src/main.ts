@@ -55,8 +55,87 @@ const student:studentType={
 }
 
 
-enum Role { Admin, Editor,
-Viewer }
-let myRole: Role = Role.Editor;
+enum CardinalDirections {
+  North = 1,
+  East,
+  South,
+  West
+};
 
-console.log(myRole);
+// logs 1 since we initialized the first value to something other than '0'
+console.log(CardinalDirections.North);
+
+// logs 4 as it continued on from the initial '1' value
+console.log(CardinalDirections.West);
+
+
+enum StatusCodes {
+  NotFound = 404,
+  Success = 200,
+  Accepted = 202,
+  BadRequest = 400
+}
+// logs 404
+console.log(StatusCodes.NotFound);
+// logs 200
+console.log(StatusCodes.Success);
+
+
+// Striing enum 
+
+enum Role { Admin='admin', Editor='editor',
+Viewer='viewer'}
+
+let myRole:Role = Role.Admin;
+
+
+// function return type 
+
+function tomarname():string{
+  const name: string='saimon'
+  return name;
+}
+
+tomarname();
+
+function printhello():void {        //another is never which one is for incompleate code or error ;
+  console.log('hello bangladesh ');
+}
+
+function arr():string[]{
+  return['a','b','c']
+}
+
+
+
+// return array of object 
+
+type studenttype={
+  name:string;
+  age:number;
+  email:string
+}
+
+const hello=():studenttype[]=>{
+  return[{
+    name:'saimon',
+    age:20,
+    email:'saymon@email.com'
+  },
+  {
+    name:'kh',
+    age:30,
+    email:'kh@mail.com'
+  }
+]
+}
+
+
+// function parameter type 
+
+function multiplef(a:string, b?:number):(string | number){      //optional parameter ? 
+  const str=a
+  const nbr= b;
+  return a;
+}
+
